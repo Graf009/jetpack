@@ -23,7 +23,7 @@ function get() {
   // return composition of functions
   return function (d) {
     functions.forEach(function (funct) {
-      return d = funct.call(_this, d);
+      d = funct.call(_this, d);
     });
     return d;
   };
