@@ -1,13 +1,13 @@
 export function get(...iteratee) {
   // convert all string arguments into field accessors
   const functions = iteratee.map(
-    (funct) => (typeof funct !== 'function') ? (d) => d[funct] : funct
+    (funct) => (typeof funct !== 'function' ? (d) => d[funct] : funct)
   )
 
   // return composition of functions
   return (d) => {
     functions.forEach(
-      (funct) => d = funct.call(this, d)
+      (funct) => { d = funct.call(this, d) }
     )
     return d
   }
