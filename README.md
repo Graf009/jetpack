@@ -1,12 +1,16 @@
-# jetpack
+# @eagle/jetpack
 
 > Nifty convenience wrappers that speed up your daily work
 
 ## Install
 
+```sh
+npm install --save @eagle/jetpack
 ```
-npm install jetpack --save
-```
+
+## Repository
+
+https://github.com/Graf009/jetpack.git
 
 ## Pack
 

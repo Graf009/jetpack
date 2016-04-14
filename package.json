@@ -1,18 +1,20 @@
 {
-  "name": "jetpack",
+  "name": "@eagle/jetpack",
   "version": "1.0.0",
   "description": "Nifty convenience wrappers that speed up your daily work",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Graf009/jetpack.git"
+    "url": "https://github.com/Graf009/jetpack.git"
   },
   "author": "Oleg Orlov <mail@orlovoleg.com>",
   "license": "MIT",
   "scripts": {
-    "preversion": "npm run clean && npm run build",
-    "build": "babel src --out-dir lib",
-    "clean": "rimraf lib",
+    "preversion": "npm run build",
+    "prebuild": "npm run lint",
+    "build": "npm run clean && npm run compile",
+    "compile": "babel src --out-dir dist",
+    "clean": "rimraf dist",
     "lint": "eslint src"
   },
   "dependencies": {
