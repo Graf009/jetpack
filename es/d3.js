@@ -1,10 +1,4 @@
-'use strict';
-
-exports.__esModule = true;
-exports.get = get;
-exports.def = def;
-exports.concat = concat;
-function get() {
+export function get() {
   var _this = this;
 
   for (var _len = arguments.length, iteratee = Array(_len), _key = 0; _key < _len; _key++) {
@@ -27,13 +21,13 @@ function get() {
   };
 }
 
-function def(value) {
+export function def(value) {
   return function (d) {
     return d || value;
   };
 }
 
-function concat(key1, key2) {
+export function concat(key1, key2) {
   return function (d) {
     var value1 = get(key1)(d);
     var value2 = get(key2)(d) || '';
