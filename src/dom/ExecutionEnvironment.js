@@ -9,7 +9,7 @@ export const ExecutionEnvironment = {
   canUseWorkers: typeof Worker !== 'undefined',
   canUseEventListeners:
     canUseDOM && !!(window.addEventListener || window.attachEvent),
-  canUseViewport: canUseDOM && !!window.screen
+  canUseViewport: canUseDOM && !!window.screen,
 }
 
 export default ExecutionEnvironment
