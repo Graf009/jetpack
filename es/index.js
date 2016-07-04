@@ -1,10 +1,9 @@
-import linkState from 'react-link-state';
-
 import * as d3 from './d3';
-import ExecutionEnvironment from './ExecutionEnvironment';
+import * as DOM from './dom';
+import * as enhance from './enhance';
 
 export default {
-  linkState: linkState,
   d3: d3,
-  ExecutionEnvironment: ExecutionEnvironment
+  DOM: DOM,
+  enhance: enhance
 };
