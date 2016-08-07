@@ -1,6 +1,6 @@
 {
-  "name": "@eagle/jetpack",
-  "version": "1.1.0",
+  "name": "@eagle/jetpack-react",
+  "version": "2.0.0",
   "description": "Nifty convenience wrappers that speed up your daily work",
   "repository": {
     "type": "git",
@@ -12,10 +12,7 @@
   "jsnext:main": "es/index.js",
   "files": [
     "dist",
-    "es",
-    "d3.js",
-    "dom.js",
-    "enhance.js"
+    "es"
   ],
   "scripts": {
     "preversion": "npm run clean && npm run check && npm run build",
@@ -30,22 +27,6 @@
     "babel-runtime": "6.9.2"
   },
   "devDependencies": {
-    "@eagle/eslint-config-eagle": "1.2.4",
-    "babel-cli": "6.10.1",
-    "babel-plugin-add-module-exports": "0.2.1",
-    "babel-plugin-transform-runtime": "6.9.0",
-    "babel-preset-es2015": "6.9.0",
-    "babel-preset-es2015-loose": "7.0.0",
-    "babel-preset-es2015-loose-native-modules": "1.0.0",
-    "babel-preset-react": "6.11.1",
-    "babel-preset-stage-0": "6.5.0",
-    "cross-env": "1.0.8",
-    "eslint": "2.13.1",
-    "eslint-plugin-import": "1.8.1",
-    "eslint-plugin-jsx-a11y": "1.2.2",
-    "eslint-plugin-react": "5.1.1",
-    "react": "15.2.0",
-    "rimraf": "2.5.3",
-    "lerna": "2.0.0-beta.24"
+    "react": "15.2.0"
   }
 }

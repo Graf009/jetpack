@@ -13,7 +13,7 @@ export function get(...iteratee) {
   }
 }
 
-export function def(value) {
+export function default(value) {
   return (d) => d || value
 }
 

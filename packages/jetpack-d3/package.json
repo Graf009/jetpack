@@ -1,0 +1,26 @@
+{
+  "name": "@eagle/jetpack-d3",
+  "version": "2.0.0",
+  "description": "Nifty convenience wrappers that speed up your daily work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Graf009/jetpack.git"
+  },
+  "author": "Oleg Orlov <mail@orlovoleg.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "dist",
+    "es"
+  ],
+  "scripts": {
+    "preversion": "npm run clean && npm run check && npm run build",
+    "clean": "rimraf dist es",
+    "lint": "eslint src",
+    "check": "npm run lint",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir dist",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+    "build": "npm run build:commonjs && npm run build:es"
+  }
+}
